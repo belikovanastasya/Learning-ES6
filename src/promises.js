@@ -53,6 +53,17 @@ promise
  };
 
 
+var promise = new Promise(function(resolve, reject){
+	setTimeout(function() { console.log('hello')
+	resolve();
+		},1000)
+	
+});
+
+promise
+.then(setTimeout(function(){console.log('Good')},3000))
+.then(setTimeout(function(){console.log('How are you')},4000))
+
 /*var Fun = function(j){
     this.j = j;
      
